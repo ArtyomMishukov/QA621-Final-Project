@@ -1,0 +1,8 @@
+{
+  "promos": [
+    {"code": "SALE10", "type": "percent", "percent": 10},
+    {"code": "MINUS500", "type": "fixed", "amount": 500, "min_total": 3000},
+    {"code": "BOARD3", "type": "three_for_two", "category": "boardgames"},
+    {"code": "PUZZLE15", "type": "category_percent", "category": "puzzles", "percent": 15}
+  ]
+}

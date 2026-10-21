@@ -1,0 +1,11 @@
+{
+  "products": [
+    {"id": "P001", "type": "piece", "name": "Каркассон (базовая игра)", "category": "boardgames", "price": 2490, "stock": 5},
+    {"id": "P002", "type": "piece", "name": "Манчкин", "category": "boardgames", "price": 1290, "stock": 8},
+    {"id": "P003", "type": "piece", "name": "Диксит", "category": "boardgames", "price": 2990, "stock": 3},
+    {"id": "P004", "type": "piece", "name": "Пазл «Звёздная ночь» 1000 деталей", "category": "puzzles", "price": 890, "stock": 10},
+    {"id": "P005", "type": "piece", "name": "Пазл «Космос» 500 деталей", "category": "puzzles", "price": 590, "stock": 12},
+    {"id": "P010", "type": "weight", "name": "Кубики D6 (на развес)", "category": "dice", "price_per_kg": 1500, "min_kg": 0.1, "stock_kg": 2.5},
+    {"id": "P020", "type": "digital", "name": "PDF «Правила для начинающих»", "category": "digital", "price": 490}
+  ]
+}
