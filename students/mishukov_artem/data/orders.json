@@ -1,5 +1,8 @@
-﻿{
-  "cart": {"items": [], "promo": null},
+{
+  "cart": {
+    "items": [],
+    "promo": null
+  },
   "orders": [],
   "next_order_id": 1
 }

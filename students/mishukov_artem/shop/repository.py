@@ -19,7 +19,7 @@ class Repository:
                 return default
             raise DataFileError(f"Файл не найден: {path}")
         try:
-            with open(path, "r", encoding="utf-8") as f:
+            with open(path, "r", encoding="utf-8-sig") as f:
                 return json.load(f)
         except json.JSONDecodeError as e:
             raise DataFileError(f"Битый JSON в {path}: {e}") from e

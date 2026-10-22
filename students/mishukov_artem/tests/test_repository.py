@@ -40,3 +40,13 @@ def test_repository_missing_orders_returns_default(tmp_path):
     assert default["orders"] == []
     assert default["next_order_id"] == 1
     assert default["cart"] == {"items": [], "promo": None}
+
+
+def test_repository_reads_file_with_utf8_bom(tmp_path):
+    # Windows PowerShell пишет BOM — Repository должен это пережить
+    path = tmp_path / "catalog.json"
+    path.write_bytes(
+        b"\xef\xbb\xbf" + '{"products": []}'.encode("utf-8")
+    )
+    repo = Repository(tmp_path)
+    assert repo.load_catalog() == {"products": []}
